@@ -1,0 +1,15 @@
+{
+  "sigma": 320,
+  "held_out_points": 15,
+  "original_step_max": 2.1528250561704136,
+  "new_step_max": 0.7748899437056626,
+  "new_step_p99": 0.39190977564011703,
+  "reference_error_p99": 3.549950261115787,
+  "maximum_correction_native_px": 8.876506805419922,
+  "min_jacobian": 0.9642069935798645,
+  "max_jacobian": 1.100332260131836,
+  "bird_and_trunk_preserved": true,
+  "all_frames": 2910,
+  "continuous_motion_verified": false,
+  "listening_verified": false
+}

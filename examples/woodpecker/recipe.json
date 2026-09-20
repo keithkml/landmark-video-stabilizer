@@ -1,0 +1,134 @@
+{
+  "description": "Red-headed Woodpecker C0120, successful regional correction of 2026-09-20",
+  "tracks": "baseline-motion.npz",
+  "affine": "affine.npy",
+  "residual": {
+    "min_valid_fraction": 0.98,
+    "validation_stride": 4,
+    "sigmas": [
+      80,
+      140,
+      220,
+      320
+    ],
+    "ridge": 0.004,
+    "regions": [
+      {
+        "x_fall": [
+          250,
+          340
+        ]
+      },
+      {
+        "x_fall": [
+          420,
+          510
+        ],
+        "y_fall": [
+          140,
+          230
+        ]
+      }
+    ],
+    "grid_size": 65,
+    "output_size": [
+      1240,
+      1240
+    ],
+    "limits": {
+      "min_jacobian": 0.8,
+      "max_jacobian": 1.2,
+      "max_displacement_px": 25
+    }
+  },
+  "render": {
+    "source_frames": [
+      0,
+      2910
+    ],
+    "fps": "60000/1001",
+    "source_display_size": [
+      2160,
+      3840
+    ],
+    "analysis_width": 1080,
+    "crop": [
+      400,
+      1320,
+      1240,
+      1240
+    ],
+    "color_filter": "scale=iw:ih:in_color_matrix=bt709:in_range=full:out_range=full,format=gbrp16le,lut3d=file='{lut}':interp=tetrahedral,curves=master='0/0 0.25/0.265 0.5/0.515 0.75/0.76 1/1',curves=master='0.000000/0.000000 0.075045/0.018000 0.500000/0.600000 0.750000/0.970000 1.000000/1.000000':interp=pchip"
+  },
+  "registration": {
+    "analysis_size": [
+      1080,
+      1920
+    ],
+    "seeds": "tracking-seeds.npy",
+    "mask_polygons": [
+      [
+        [
+          554,
+          620
+        ],
+        [
+          810,
+          620
+        ],
+        [
+          838,
+          816
+        ],
+        [
+          550,
+          816
+        ]
+      ],
+      [
+        [
+          630,
+          828
+        ],
+        [
+          840,
+          828
+        ],
+        [
+          860,
+          1240
+        ],
+        [
+          580,
+          1240
+        ],
+        [
+          558,
+          1112
+        ],
+        [
+          630,
+          1082
+        ]
+      ],
+      [
+        [
+          436,
+          744
+        ],
+        [
+          528,
+          714
+        ],
+        [
+          532,
+          794
+        ],
+        [
+          464,
+          814
+        ]
+      ]
+    ]
+  }
+}

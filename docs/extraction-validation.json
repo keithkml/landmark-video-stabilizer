@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-09-20T20:23:19.068137+00:00",
+  "local_tests": {
+    "passed": 11,
+    "synthetic_encoded_video_integration": true,
+    "overwrite_protection": true,
+    "source_bounds_rejection": true
+  },
+  "original_correction_regression": {
+    "frames": 2910,
+    "all_grid_values_exactly_equal": true,
+    "max_absolute_difference_px": 0.0
+  },
+  "original_raw_source_registration_smoke": {
+    "frames": 8,
+    "all_affine_values_exactly_equal": true
+  },
+  "original_source_render_smoke": {
+    "frames": 3,
+    "full_decode_passed": true,
+    "sha256": "359b487df3d5cfb064b2ce94d62a0be3c9a992406e8aae2dd8427bf18b707585",
+    "audio_included": false
+  },
+  "package_wheel_build": "passed",
+  "isolated_target_install_and_cli_help": "passed",
+  "continuous_motion_verified": false,
+  "listening_verified": false,
+  "scope": "Validation of extraction and packaging; this does not approve additional video repairs."
+}

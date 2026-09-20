@@ -1,0 +1,49 @@
+{
+  "origin": "Working woodpecker repair, September 2026",
+  "adaptation": "Code separated from local review application; regions and paths made configurable. No source media or LUT is bundled.",
+  "original_scripts": [
+    {
+      "filename": "woodpecker_depth_refine.py",
+      "sha256": "a14daae017e6b1200cb5c16975077b2ecd72653a5f3208bd6bfeaa3d7922695c"
+    },
+    {
+      "filename": "render_affine.py",
+      "sha256": "001b3dbbea2690a75ced628a9a6fc35a3f9f3eaaf1c8a990987fd0034de2522d"
+    },
+    {
+      "filename": "track.py",
+      "sha256": "cd96e4218aa6711745321aeeffaa88cb14817465ec1fbe59d0b8074e2befe47c"
+    },
+    {
+      "filename": "verify_exports.py",
+      "sha256": "610df0c6d9a9e8ab978d2282911418887eda7bd9631603d9fc97390d4fba126e"
+    }
+  ],
+  "original_runtime": {
+    "python": "3.13.1",
+    "numpy": "2.4.4",
+    "opencv": "5.0.0"
+  },
+  "fixtures": [
+    {
+      "filename": "affine.npy",
+      "sha256": "c7f45723cc686df8683972173c00622305a889b43f6cda8ff9cee612b441a371"
+    },
+    {
+      "filename": "baseline-motion.npz",
+      "sha256": "9c9ecc4b7470bc929113e4c8efa3f664aec536e918d5d8846e8c89df4caf835a"
+    },
+    {
+      "filename": "expected-fields.npz",
+      "sha256": "abfcee53ff07a8aeb866096801d6f82587ab65ff1d907a4a29abe9815ed4ed81"
+    },
+    {
+      "filename": "export-landmarks.npz",
+      "sha256": "dce0afb091f85e4ab62352f8d41d5e4f2cceb0476132b99e3151ff91da26f3ab"
+    },
+    {
+      "filename": "tracking-seeds.npy",
+      "sha256": "eb3441d3cc67201de12f6bf9a246c08b027b4e7a4c090250bdba5c9d021d017b"
+    }
+  ]
+}

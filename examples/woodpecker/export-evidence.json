@@ -1,0 +1,47 @@
+{
+  "sha256": "82d913bff1741fdbaad80c38651207bb0e3160f279338ca7214fe32291b35449",
+  "source_frames": [
+    0,
+    2910
+  ],
+  "decoded_frames": 2910,
+  "geometry": {
+    "checked_frames": 2910,
+    "minimum_landmark_confidence": 0.9612403100775194,
+    "maximum_stationary_landmark_step_native_px": 0.9817832708358765,
+    "stationary_landmarks_interior": 129,
+    "interior_definition": "Full 41-pixel support margin in every frame; all positions outside that margin excluded by location, not residual size. Seven edge locations are separately reported.",
+    "excluded_edge_locations": [
+      49,
+      62,
+      70,
+      97,
+      103,
+      115,
+      130
+    ],
+    "all_136_locations_maximum_step_native_px": 1.0712915658950806,
+    "trunk_maximum_step_native_px": 0.3696199655532837,
+    "invalid_source_crop_frames": 0,
+    "deformation_check_pass": true,
+    "deformation_evidence": {
+      "bounded_background_correction_only": true,
+      "bird_and_foreground_transform_unchanged": true,
+      "minimum_background_map_jacobian": 0.9642069935798645,
+      "maximum_background_map_jacobian": 1.100332260131836,
+      "native_frames_inspected": true
+    }
+  },
+  "continuous_motion_verified": false,
+  "listening_verified": false,
+  "limitations": [
+    "Frame inspection and landmark measurements are not continuous perceptual playback.",
+    "Audio meets the measured ceiling but has not been listened to.",
+    "Seven edge tracking locations lack a full 41-pixel support margin; their separate maximum is 1.0713 native pixels. Small slow background displacement remains."
+  ],
+  "source_filename": "C0120.MP4",
+  "output_filename": "woodpecker-depth-corrected-20260920-final.mp4",
+  "inspection_method": "All frames inspected as numbered contact sheets, 52 larger samples, four native-resolution frames; not continuous perceptual playback.",
+  "user_feedback": "User described this exact export as amazing after review on 2026-09-20.",
+  "render_reproducibility": "Correction geometry preserved. Matching the complete encoded file also requires original camera media, original LUT, preprocessed aligned audio, and matching FFmpeg/library versions."
+}
