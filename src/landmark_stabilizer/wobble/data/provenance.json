@@ -1,0 +1,22 @@
+{
+  "calibration": "native-v3, September 2026",
+  "origin": "bird-video-db wobble preference detector",
+  "model_sha256": "21196ce79fa8879dae61cf2037fb1cbd7bcfe0d8d5df7aa330e4096541eeeed8",
+  "extractor_sha256": "7574078cb37e0045bf8ed82214733bd1e8e651f012e0b3ef028a1aae73a156d2",
+  "predictor_sha256": "896266e173372dce6eddb8e4447d193d9a3a53faa904f63d8c7f247f477813e2",
+  "changes": [
+    "Predictor, extractor, model bytes unchanged.",
+    "Local-file adapter replaces workspace media redirection.",
+    "CLI imports and packaging adapted; detect output refuses overwrite."
+  ],
+  "evaluation": {
+    "known_correct": 9,
+    "known_total": 9,
+    "heldout_correct": 6,
+    "heldout_total": 9,
+    "independent_recordings": 3,
+    "heldout_false_alarms": 3,
+    "automatic_approval_permitted": false
+  },
+  "limitations": "Development cross-validation, not an untouched prospective test. Score is a forest vote fraction, not calibrated severity or probability. Raw media and private review records are not distributed."
+}

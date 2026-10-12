@@ -20,6 +20,8 @@ not an automatic bird detector or a universal stabilization preset.
 - The successful woodpecker recipe, measured input tracks, affine matrices,
   original registration seeds, regression fixtures, and an honest evidence record.
 - The original fixed-reference trunk registration procedure, made configurable.
+- An advisory wobble detector with a bundled calibration, exact-code provenance,
+  numeric regression fixtures, and a standalone file-scoring command.
 
 Camera recordings, finished videos, proprietary LUTs, audio, and review-app data
 are kept outside this repository. The example's numerical fixtures total about
@@ -89,6 +91,24 @@ Measurements cannot establish perceptual quality. Inspect framing and individual
 failure frames, watch the entire export in motion, and listen to its audio. The
 tools leave `quality_approved`, `continuous_motion_verified`, and
 `listening_verified` false. They do not approve or publish media.
+
+## Screen an export for wobble
+
+```sh
+landmark-stabilizer wobble /path/to/export.mp4 --output work/wobble.json
+```
+
+This reads the finished video and reports `too_wobbly`, `not_too_wobbly`, or
+`needs_review`, with a numeric score, tracking quality, and time-window
+measurements. It includes the frozen native-v3 model; no model download or API
+key is needed. Existing files are never overwritten by this command.
+
+The model reproduces all nine training labels but scores only **6/9** when
+holding out whole recordings, with three false alarms. Its score is a forest
+vote fraction, not a calibrated probability or severity scale. It is an
+advisory review aid and never grants approval. See the
+[detector guide](docs/wobble-detector.md) for limitations, provenance, JSON
+output, and the `wobble-detector` extraction/evaluation CLI.
 
 ## Re-run the foreground registration
 

@@ -8,6 +8,7 @@ import numpy as np
 from .core import fit_fields, require
 from .measure import measure_export
 from .render import render
+from .wobble.cli import DEFAULT_MODEL, detect
 
 
 def write_json(path, value):
@@ -36,6 +37,12 @@ def main(argv=None):
     measurement.add_argument("--points", required=True, type=Path, help="NPZ containing reference_points in output pixels")
     measurement.add_argument("--expected-frames", type=int)
     measurement.add_argument("--out", required=True, type=Path)
+    detection = sub.add_parser("wobble", help="Score exported video wobble; advisory, never an approval")
+    detection.add_argument("video", type=Path)
+    detection.add_argument("--model", type=Path, default=DEFAULT_MODEL,
+                           help="Model JSON (default: bundled native-v3 calibration)")
+    detection.add_argument("--output", type=Path, help="Write full measurements to a new JSON file")
+    detection.add_argument("--threads", type=int, default=2)
     args = parser.parse_args(argv)
     cv2.setNumThreads(3)
     try:
@@ -59,6 +66,10 @@ def main(argv=None):
             report = render(recipe, args.plan, args.source, args.output, args.lut, args.audio,
                             args.limit_frames, args.ffmpeg)
             print(json.dumps(report, indent=2))
+        elif args.command == "wobble":
+            require(args.threads >= 1, "--threads must be at least 1")
+            cv2.setNumThreads(args.threads)
+            detect(args)
         else:
             require(not args.out.exists(), "Measurement directory exists; choose a new one")
             with np.load(args.points, allow_pickle=False) as data:
@@ -69,5 +80,5 @@ def main(argv=None):
                                 displacement=displacement, valid=valid)
             write_json(args.out / "measurements.json", report)
             print(json.dumps(report, indent=2))
-    except (ValueError, FileNotFoundError, FileExistsError) as error:
+    except (ValueError, OSError, KeyError) as error:
         parser.exit(2, f"error: {error}\n")

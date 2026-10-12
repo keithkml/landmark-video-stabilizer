@@ -1,0 +1,756 @@
+{
+  "description": "Frozen numeric features and reference predictions; no videos, local paths, species, coordinates, or user messages. Not a new independent validation set.",
+  "examples": [
+    {
+      "id": "good-f8fa880be3c10074",
+      "source_id": "0a554f79a55f",
+      "split_group": "0a554f79a55f",
+      "sha256": "f8fa880be3c100747198e21c4cd440052e6979f24f2daf6892ab32f74bdab61c",
+      "label": "not_too_wobbly",
+      "features": {
+        "residual_p50_px_p90": 3.1522319,
+        "residual_p90_px_p90": 11.9088076,
+        "affine_deformation_px_p90": 2.4483181,
+        "projective_deformation_px_p90": 3.1797432,
+        "row_coherence_px_p90": 2.4054033,
+        "local_coherence_px_p90": 2.8713139,
+        "spatial_incoherence_px_p90": 2.9237056,
+        "scale_change_p90": 0.0044898,
+        "rotation_degrees_p90": 0.3637615,
+        "deformation_oscillation_px": 1.8834174,
+        "row_oscillation_px": 1.3195437,
+        "deformation_reversal_fraction": 0.4322831,
+        "row_reversal_fraction": 0.3787054,
+        "worst_window_row_coherence_px_p90": 8.5316398,
+        "worst_window_local_coherence_px_p90": 10.1045403,
+        "worst_window_scale_change_p90": 0.0084234,
+        "worst_window_rotation_degrees_p90": 0.5805076,
+        "worst_window_deformation_oscillation_px": 4.2727105,
+        "worst_window_row_oscillation_px": 3.2204112,
+        "scale_pumping_px": 0.7892175,
+        "scale_pumping_reversal_fraction": 0.6385105,
+        "rotation_pumping_px": 1.1144915,
+        "rotation_pumping_reversal_fraction": 0.6053727,
+        "worst_window_scale_pumping_px": 1.4083233,
+        "worst_window_rotation_pumping_px": 1.7424451
+      },
+      "features_available": true
+    },
+    {
+      "id": "good-fff0f7c9ad155567",
+      "source_id": "0a554f79a55f",
+      "split_group": "0a554f79a55f",
+      "sha256": "fff0f7c9ad15556722b5e1e48ccb6596becbfa26015cb8dcdf40c79a107faf75",
+      "label": "not_too_wobbly",
+      "features": {
+        "residual_p50_px_p90": 6.939759,
+        "residual_p90_px_p90": 19.5630333,
+        "affine_deformation_px_p90": 7.7800407,
+        "projective_deformation_px_p90": 8.3676071,
+        "row_coherence_px_p90": 4.6629034,
+        "local_coherence_px_p90": 7.1974563,
+        "spatial_incoherence_px_p90": 5.4431117,
+        "scale_change_p90": 0.022364,
+        "rotation_degrees_p90": 1.0955407,
+        "deformation_oscillation_px": 4.9890626,
+        "row_oscillation_px": 2.9017331,
+        "deformation_reversal_fraction": 0.4610914,
+        "row_reversal_fraction": 0.4715371,
+        "worst_window_row_coherence_px_p90": 6.563921,
+        "worst_window_local_coherence_px_p90": 9.2398068,
+        "worst_window_scale_change_p90": 0.031662,
+        "worst_window_rotation_degrees_p90": 1.4247735,
+        "worst_window_deformation_oscillation_px": 6.4706211,
+        "worst_window_row_oscillation_px": 3.8065971,
+        "scale_pumping_px": 4.9445563,
+        "scale_pumping_reversal_fraction": 0.4879187,
+        "rotation_pumping_px": 4.4867826,
+        "rotation_pumping_reversal_fraction": 0.5647264,
+        "worst_window_scale_pumping_px": 6.8875953,
+        "worst_window_rotation_pumping_px": 5.9219862
+      },
+      "features_available": true
+    },
+    {
+      "id": "bad-72205cf4cd822215",
+      "source_id": "0a554f79a55f",
+      "split_group": "0a554f79a55f",
+      "sha256": "72205cf4cd822215e018019a0a8a0ce77363b2c12cd35b9945ca907b8ee6be1e",
+      "label": "too_wobbly",
+      "features": {
+        "residual_p50_px_p90": 4.8037633,
+        "residual_p90_px_p90": 15.9086206,
+        "affine_deformation_px_p90": 3.6583257,
+        "projective_deformation_px_p90": 4.3281016,
+        "row_coherence_px_p90": 3.2643252,
+        "local_coherence_px_p90": 3.4480213,
+        "spatial_incoherence_px_p90": 4.6513744,
+        "scale_change_p90": 0.0138865,
+        "rotation_degrees_p90": 0.3249374,
+        "deformation_oscillation_px": 2.375097,
+        "row_oscillation_px": 1.780549,
+        "deformation_reversal_fraction": 0.5079889,
+        "row_reversal_fraction": 0.4965187,
+        "worst_window_row_coherence_px_p90": 3.9946666,
+        "worst_window_local_coherence_px_p90": 4.1571001,
+        "worst_window_scale_change_p90": 0.0159766,
+        "worst_window_rotation_degrees_p90": 0.3715375,
+        "worst_window_deformation_oscillation_px": 2.8116831,
+        "worst_window_row_oscillation_px": 2.1223581,
+        "scale_pumping_px": 4.1888719,
+        "scale_pumping_reversal_fraction": 0.3265568,
+        "rotation_pumping_px": 1.7823715,
+        "rotation_pumping_reversal_fraction": 0.3314599,
+        "worst_window_scale_pumping_px": 5.1025016,
+        "worst_window_rotation_pumping_px": 2.0839383
+      },
+      "features_available": true
+    },
+    {
+      "id": "bad-83bb692a33012d50",
+      "source_id": "0a554f79a55f",
+      "split_group": "0a554f79a55f",
+      "sha256": "83bb692a33012d5051af2b1bfeb53f67d8f30c1add1a21f42c466aef9b7352c4",
+      "label": "too_wobbly",
+      "features": {
+        "residual_p50_px_p90": 3.0942495,
+        "residual_p90_px_p90": 10.5425183,
+        "affine_deformation_px_p90": 2.4361654,
+        "projective_deformation_px_p90": 2.8694615,
+        "row_coherence_px_p90": 1.9777787,
+        "local_coherence_px_p90": 2.3974105,
+        "spatial_incoherence_px_p90": 2.9446627,
+        "scale_change_p90": 0.010798,
+        "rotation_degrees_p90": 0.1511323,
+        "deformation_oscillation_px": 1.7482514,
+        "row_oscillation_px": 1.0245024,
+        "deformation_reversal_fraction": 0.4210974,
+        "row_reversal_fraction": 0.3154491,
+        "worst_window_row_coherence_px_p90": 7.6197802,
+        "worst_window_local_coherence_px_p90": 7.1823766,
+        "worst_window_scale_change_p90": 0.0212901,
+        "worst_window_rotation_degrees_p90": 0.4589865,
+        "worst_window_deformation_oscillation_px": 3.2344918,
+        "worst_window_row_oscillation_px": 2.1584881,
+        "scale_pumping_px": 3.2615718,
+        "scale_pumping_reversal_fraction": 0.4111679,
+        "rotation_pumping_px": 1.0871594,
+        "rotation_pumping_reversal_fraction": 0.2852723,
+        "worst_window_scale_pumping_px": 5.7104622,
+        "worst_window_rotation_pumping_px": 2.1845447
+      },
+      "features_available": true
+    },
+    {
+      "id": "good-12263f406346e8c8",
+      "source_id": "46eb8f203a58",
+      "split_group": "46eb8f203a58",
+      "sha256": "12263f406346e8c8e35a73b9b60e85bc87a282e6806d0a835e19f39d12917455",
+      "label": "not_too_wobbly",
+      "features": {
+        "residual_p50_px_p90": 2.1126165,
+        "residual_p90_px_p90": 33.7195513,
+        "affine_deformation_px_p90": 2.4592917,
+        "projective_deformation_px_p90": 2.670632,
+        "row_coherence_px_p90": 2.1215437,
+        "local_coherence_px_p90": 2.2506587,
+        "spatial_incoherence_px_p90": 1.2376929,
+        "scale_change_p90": 0.0056287,
+        "rotation_degrees_p90": 0.2539856,
+        "deformation_oscillation_px": 1.5393549,
+        "row_oscillation_px": 1.2464462,
+        "deformation_reversal_fraction": 0.3010079,
+        "row_reversal_fraction": 0.3950292,
+        "worst_window_row_coherence_px_p90": 12.7489579,
+        "worst_window_local_coherence_px_p90": 12.3750444,
+        "worst_window_scale_change_p90": 0.0521507,
+        "worst_window_rotation_degrees_p90": 0.9489809,
+        "worst_window_deformation_oscillation_px": 3.914855,
+        "worst_window_row_oscillation_px": 2.8958324,
+        "scale_pumping_px": 1.3311649,
+        "scale_pumping_reversal_fraction": 0.6950772,
+        "rotation_pumping_px": 0.7042283,
+        "rotation_pumping_reversal_fraction": 0.439962,
+        "worst_window_scale_pumping_px": 5.719505,
+        "worst_window_rotation_pumping_px": 2.3346582
+      },
+      "features_available": true
+    },
+    {
+      "id": "bad-f162e29eafac3821",
+      "source_id": "46eb8f203a58",
+      "split_group": "46eb8f203a58",
+      "sha256": "f162e29eafac382188a278236fd1d2b1c7a9f594bd4642ac6ded384e512880cb",
+      "label": "too_wobbly",
+      "features": {
+        "residual_p50_px_p90": 2.4619592,
+        "residual_p90_px_p90": 28.0534009,
+        "affine_deformation_px_p90": 2.8040764,
+        "projective_deformation_px_p90": 2.8691279,
+        "row_coherence_px_p90": 2.2917162,
+        "local_coherence_px_p90": 2.3783427,
+        "spatial_incoherence_px_p90": 1.2168765,
+        "scale_change_p90": 0.0047332,
+        "rotation_degrees_p90": 0.2838851,
+        "deformation_oscillation_px": 1.5437944,
+        "row_oscillation_px": 1.2637168,
+        "deformation_reversal_fraction": 0.4718931,
+        "row_reversal_fraction": 0.4649299,
+        "worst_window_row_coherence_px_p90": 2.7066919,
+        "worst_window_local_coherence_px_p90": 2.8813748,
+        "worst_window_scale_change_p90": 0.0077349,
+        "worst_window_rotation_degrees_p90": 0.3605022,
+        "worst_window_deformation_oscillation_px": 1.6993728,
+        "worst_window_row_oscillation_px": 1.4095258,
+        "scale_pumping_px": 0.6137247,
+        "scale_pumping_reversal_fraction": 0.5489802,
+        "rotation_pumping_px": 0.6078291,
+        "rotation_pumping_reversal_fraction": 0.6151183,
+        "worst_window_scale_pumping_px": 0.7630916,
+        "worst_window_rotation_pumping_px": 0.7521627
+      },
+      "features_available": true
+    },
+    {
+      "id": "good-82d913bff1741fdb",
+      "source_id": "79c14c7a8b15",
+      "split_group": "79c14c7a8b15",
+      "sha256": "82d913bff1741fdbaad80c38651207bb0e3160f279338ca7214fe32291b35449",
+      "label": "not_too_wobbly",
+      "features": {
+        "residual_p50_px_p90": 0.3718273,
+        "residual_p90_px_p90": 1.0590765,
+        "affine_deformation_px_p90": 0.1394825,
+        "projective_deformation_px_p90": 0.20394,
+        "row_coherence_px_p90": 0.1319187,
+        "local_coherence_px_p90": 0.2948973,
+        "spatial_incoherence_px_p90": 0.4199421,
+        "scale_change_p90": 0.000398,
+        "rotation_degrees_p90": 0.0299065,
+        "deformation_oscillation_px": 0.123581,
+        "row_oscillation_px": 0.0796586,
+        "deformation_reversal_fraction": 0.5625583,
+        "row_reversal_fraction": 0.5157449,
+        "worst_window_row_coherence_px_p90": 0.1461368,
+        "worst_window_local_coherence_px_p90": 0.3353034,
+        "worst_window_scale_change_p90": 0.0004657,
+        "worst_window_rotation_degrees_p90": 0.0357522,
+        "worst_window_deformation_oscillation_px": 0.1383738,
+        "worst_window_row_oscillation_px": 0.0899533,
+        "scale_pumping_px": 0.0728803,
+        "scale_pumping_reversal_fraction": 0.6482191,
+        "rotation_pumping_px": 0.0958965,
+        "rotation_pumping_reversal_fraction": 0.6353849,
+        "worst_window_scale_pumping_px": 0.0843577,
+        "worst_window_rotation_pumping_px": 0.1113322
+      },
+      "features_available": true
+    },
+    {
+      "id": "bad-37d50341c7110dac",
+      "source_id": "79c14c7a8b15",
+      "split_group": "79c14c7a8b15",
+      "sha256": "37d50341c7110dac2fef4257dab11ebd7abec807edcfc8825a677130f81d44bc",
+      "label": "too_wobbly",
+      "features": {
+        "residual_p50_px_p90": 1.3999611,
+        "residual_p90_px_p90": 2.2145669,
+        "affine_deformation_px_p90": 1.3727842,
+        "projective_deformation_px_p90": 1.3862018,
+        "row_coherence_px_p90": 0.9912321,
+        "local_coherence_px_p90": 1.2659255,
+        "spatial_incoherence_px_p90": 0.5059614,
+        "scale_change_p90": 0.0040767,
+        "rotation_degrees_p90": 0.1732117,
+        "deformation_oscillation_px": 0.9588089,
+        "row_oscillation_px": 0.6733538,
+        "deformation_reversal_fraction": 0.6648161,
+        "row_reversal_fraction": 0.6412402,
+        "worst_window_row_coherence_px_p90": 1.2574389,
+        "worst_window_local_coherence_px_p90": 1.595601,
+        "worst_window_scale_change_p90": 0.0060902,
+        "worst_window_rotation_degrees_p90": 0.2117315,
+        "worst_window_deformation_oscillation_px": 1.2340767,
+        "worst_window_row_oscillation_px": 0.8642493,
+        "scale_pumping_px": 0.7781108,
+        "scale_pumping_reversal_fraction": 0.6381262,
+        "rotation_pumping_px": 0.5783321,
+        "rotation_pumping_reversal_fraction": 0.6196219,
+        "worst_window_scale_pumping_px": 1.0651529,
+        "worst_window_rotation_pumping_px": 0.8054548
+      },
+      "features_available": true
+    },
+    {
+      "id": "bad-c32464bfaa7f5e02",
+      "source_id": "79c14c7a8b15",
+      "split_group": "79c14c7a8b15",
+      "sha256": "c32464bfaa7f5e02f1a5c99f35eb1d6c130b7af2e30aea83c9b8421c6ad5f66b",
+      "label": "too_wobbly",
+      "features": {
+        "residual_p50_px_p90": 1.2261439,
+        "residual_p90_px_p90": 2.0949608,
+        "affine_deformation_px_p90": 1.2684691,
+        "projective_deformation_px_p90": 1.2800344,
+        "row_coherence_px_p90": 0.6349478,
+        "local_coherence_px_p90": 1.1981311,
+        "spatial_incoherence_px_p90": 0.3297009,
+        "scale_change_p90": 0.0043286,
+        "rotation_degrees_p90": 0.0565413,
+        "deformation_oscillation_px": 0.8906874,
+        "row_oscillation_px": 0.4319709,
+        "deformation_reversal_fraction": 0.687904,
+        "row_reversal_fraction": 0.64781,
+        "worst_window_row_coherence_px_p90": 0.7501896,
+        "worst_window_local_coherence_px_p90": 1.3457344,
+        "worst_window_scale_change_p90": 0.0080484,
+        "worst_window_rotation_degrees_p90": 0.0780775,
+        "worst_window_deformation_oscillation_px": 1.0093147,
+        "worst_window_row_oscillation_px": 0.4932183,
+        "scale_pumping_px": 1.1458225,
+        "scale_pumping_reversal_fraction": 0.4858549,
+        "rotation_pumping_px": 0.272637,
+        "rotation_pumping_reversal_fraction": 0.5636238,
+        "worst_window_scale_pumping_px": 2.1367239,
+        "worst_window_rotation_pumping_px": 0.3816532
+      },
+      "features_available": true
+    }
+  ],
+  "pairs": [
+    {
+      "id": "pair-72205cf4-fff0f7c9",
+      "before_id": "bad-72205cf4cd822215",
+      "after_id": "good-fff0f7c9ad155567",
+      "repair_kind": "overlapping_source_interval_recut"
+    },
+    {
+      "id": "pair-83bb692a-f8fa880b",
+      "before_id": "bad-83bb692a33012d50",
+      "after_id": "good-f8fa880be3c10074",
+      "repair_kind": "overlapping_source_interval_recut"
+    },
+    {
+      "id": "pair-f162e29e-12263f40",
+      "before_id": "bad-f162e29eafac3821",
+      "after_id": "good-12263f406346e8c8",
+      "repair_kind": "overlapping_source_interval_recut"
+    },
+    {
+      "id": "pair-37d50341-82d913bf",
+      "before_id": "bad-37d50341c7110dac",
+      "after_id": "good-82d913bff1741fdb",
+      "repair_kind": "same_interval_repair"
+    },
+    {
+      "id": "pair-c32464bf-82d913bf",
+      "before_id": "bad-c32464bfaa7f5e02",
+      "after_id": "good-82d913bff1741fdb",
+      "repair_kind": "same_interval_repair"
+    }
+  ],
+  "expected": {
+    "resubstitution": {
+      "total": 9,
+      "correct": 9,
+      "strict_accuracy": 1.0,
+      "source_macro_accuracy": 1.0,
+      "confusion": {
+        "tp": 5,
+        "tn": 4,
+        "fp": 0,
+        "fn": 0,
+        "abstain": 0
+      },
+      "too_wobbly_recall": 1.0,
+      "accepted_specificity": 1.0,
+      "descriptive_wilson_95": [
+        0.7008472464490407,
+        1.0
+      ],
+      "interval_caveat": "Per-example descriptive interval; variants within a source are correlated",
+      "pairs": {
+        "total": 5,
+        "correct": 5,
+        "details": [
+          {
+            "id": "pair-72205cf4-fff0f7c9",
+            "before_id": "bad-72205cf4cd822215",
+            "after_id": "good-fff0f7c9ad155567",
+            "repair_kind": "overlapping_source_interval_recut",
+            "correct": true,
+            "before_prediction": "too_wobbly",
+            "after_prediction": "not_too_wobbly",
+            "score_decreased": true
+          },
+          {
+            "id": "pair-83bb692a-f8fa880b",
+            "before_id": "bad-83bb692a33012d50",
+            "after_id": "good-f8fa880be3c10074",
+            "repair_kind": "overlapping_source_interval_recut",
+            "correct": true,
+            "before_prediction": "too_wobbly",
+            "after_prediction": "not_too_wobbly",
+            "score_decreased": true
+          },
+          {
+            "id": "pair-f162e29e-12263f40",
+            "before_id": "bad-f162e29eafac3821",
+            "after_id": "good-12263f406346e8c8",
+            "repair_kind": "overlapping_source_interval_recut",
+            "correct": true,
+            "before_prediction": "too_wobbly",
+            "after_prediction": "not_too_wobbly",
+            "score_decreased": true
+          },
+          {
+            "id": "pair-37d50341-82d913bf",
+            "before_id": "bad-37d50341c7110dac",
+            "after_id": "good-82d913bff1741fdb",
+            "repair_kind": "same_interval_repair",
+            "correct": true,
+            "before_prediction": "too_wobbly",
+            "after_prediction": "not_too_wobbly",
+            "score_decreased": true
+          },
+          {
+            "id": "pair-c32464bf-82d913bf",
+            "before_id": "bad-c32464bfaa7f5e02",
+            "after_id": "good-82d913bff1741fdb",
+            "repair_kind": "same_interval_repair",
+            "correct": true,
+            "before_prediction": "too_wobbly",
+            "after_prediction": "not_too_wobbly",
+            "score_decreased": true
+          }
+        ]
+      },
+      "predictions": [
+        {
+          "prediction": "not_too_wobbly",
+          "score": 0.0,
+          "margin": 0.5,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "good-f8fa880be3c10074",
+          "source_id": "0a554f79a55f",
+          "expected": "not_too_wobbly"
+        },
+        {
+          "prediction": "not_too_wobbly",
+          "score": 0.0,
+          "margin": 0.5,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "good-fff0f7c9ad155567",
+          "source_id": "0a554f79a55f",
+          "expected": "not_too_wobbly"
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 1.0,
+          "margin": 0.5,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "bad-72205cf4cd822215",
+          "source_id": "0a554f79a55f",
+          "expected": "too_wobbly"
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 1.0,
+          "margin": 0.5,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "bad-83bb692a33012d50",
+          "source_id": "0a554f79a55f",
+          "expected": "too_wobbly"
+        },
+        {
+          "prediction": "not_too_wobbly",
+          "score": 0.0,
+          "margin": 0.5,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "good-12263f406346e8c8",
+          "source_id": "46eb8f203a58",
+          "expected": "not_too_wobbly"
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 1.0,
+          "margin": 0.5,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "bad-f162e29eafac3821",
+          "source_id": "46eb8f203a58",
+          "expected": "too_wobbly"
+        },
+        {
+          "prediction": "not_too_wobbly",
+          "score": 0.0,
+          "margin": 0.5,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "good-82d913bff1741fdb",
+          "source_id": "79c14c7a8b15",
+          "expected": "not_too_wobbly"
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 1.0,
+          "margin": 0.5,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "bad-37d50341c7110dac",
+          "source_id": "79c14c7a8b15",
+          "expected": "too_wobbly"
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 1.0,
+          "margin": 0.5,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "bad-c32464bfaa7f5e02",
+          "source_id": "79c14c7a8b15",
+          "expected": "too_wobbly"
+        }
+      ]
+    },
+    "group_holdout": {
+      "total": 9,
+      "correct": 6,
+      "strict_accuracy": 0.6666666666666666,
+      "source_macro_accuracy": 0.7222222222222222,
+      "confusion": {
+        "tp": 5,
+        "tn": 1,
+        "fp": 3,
+        "fn": 0,
+        "abstain": 0
+      },
+      "too_wobbly_recall": 1.0,
+      "accepted_specificity": 0.25,
+      "descriptive_wilson_95": [
+        0.35419734749908977,
+        0.879418401317257
+      ],
+      "interval_caveat": "Per-example descriptive interval; variants within a source are correlated",
+      "pairs": {
+        "total": 5,
+        "correct": 1,
+        "details": [
+          {
+            "id": "pair-72205cf4-fff0f7c9",
+            "before_id": "bad-72205cf4cd822215",
+            "after_id": "good-fff0f7c9ad155567",
+            "repair_kind": "overlapping_source_interval_recut",
+            "correct": false,
+            "before_prediction": "too_wobbly",
+            "after_prediction": "too_wobbly",
+            "score_decreased": true
+          },
+          {
+            "id": "pair-83bb692a-f8fa880b",
+            "before_id": "bad-83bb692a33012d50",
+            "after_id": "good-f8fa880be3c10074",
+            "repair_kind": "overlapping_source_interval_recut",
+            "correct": false,
+            "before_prediction": "too_wobbly",
+            "after_prediction": "too_wobbly",
+            "score_decreased": false
+          },
+          {
+            "id": "pair-f162e29e-12263f40",
+            "before_id": "bad-f162e29eafac3821",
+            "after_id": "good-12263f406346e8c8",
+            "repair_kind": "overlapping_source_interval_recut",
+            "correct": true,
+            "before_prediction": "too_wobbly",
+            "after_prediction": "not_too_wobbly",
+            "score_decreased": true
+          },
+          {
+            "id": "pair-37d50341-82d913bf",
+            "before_id": "bad-37d50341c7110dac",
+            "after_id": "good-82d913bff1741fdb",
+            "repair_kind": "same_interval_repair",
+            "correct": false,
+            "before_prediction": "too_wobbly",
+            "after_prediction": "too_wobbly",
+            "score_decreased": false
+          },
+          {
+            "id": "pair-c32464bf-82d913bf",
+            "before_id": "bad-c32464bfaa7f5e02",
+            "after_id": "good-82d913bff1741fdb",
+            "repair_kind": "same_interval_repair",
+            "correct": false,
+            "before_prediction": "too_wobbly",
+            "after_prediction": "too_wobbly",
+            "score_decreased": true
+          }
+        ]
+      },
+      "predictions": [
+        {
+          "prediction": "too_wobbly",
+          "score": 0.625,
+          "margin": 0.125,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "good-f8fa880be3c10074",
+          "source_id": "0a554f79a55f",
+          "expected": "not_too_wobbly",
+          "training_source_ids": [
+            "46eb8f203a58",
+            "79c14c7a8b15"
+          ]
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 0.5703125,
+          "margin": 0.0703125,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "good-fff0f7c9ad155567",
+          "source_id": "0a554f79a55f",
+          "expected": "not_too_wobbly",
+          "training_source_ids": [
+            "46eb8f203a58",
+            "79c14c7a8b15"
+          ]
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 0.65625,
+          "margin": 0.15625,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "bad-72205cf4cd822215",
+          "source_id": "0a554f79a55f",
+          "expected": "too_wobbly",
+          "training_source_ids": [
+            "46eb8f203a58",
+            "79c14c7a8b15"
+          ]
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 0.546875,
+          "margin": 0.046875,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "bad-83bb692a33012d50",
+          "source_id": "0a554f79a55f",
+          "expected": "too_wobbly",
+          "training_source_ids": [
+            "46eb8f203a58",
+            "79c14c7a8b15"
+          ]
+        },
+        {
+          "prediction": "not_too_wobbly",
+          "score": 0.375,
+          "margin": 0.125,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "good-12263f406346e8c8",
+          "source_id": "46eb8f203a58",
+          "expected": "not_too_wobbly",
+          "training_source_ids": [
+            "0a554f79a55f",
+            "79c14c7a8b15"
+          ]
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 0.7734375,
+          "margin": 0.2734375,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "bad-f162e29eafac3821",
+          "source_id": "46eb8f203a58",
+          "expected": "too_wobbly",
+          "training_source_ids": [
+            "0a554f79a55f",
+            "79c14c7a8b15"
+          ]
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 0.8671875,
+          "margin": 0.3671875,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "good-82d913bff1741fdb",
+          "source_id": "79c14c7a8b15",
+          "expected": "not_too_wobbly",
+          "training_source_ids": [
+            "0a554f79a55f",
+            "46eb8f203a58"
+          ]
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 0.8671875,
+          "margin": 0.3671875,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "bad-37d50341c7110dac",
+          "source_id": "79c14c7a8b15",
+          "expected": "too_wobbly",
+          "training_source_ids": [
+            "0a554f79a55f",
+            "46eb8f203a58"
+          ]
+        },
+        {
+          "prediction": "too_wobbly",
+          "score": 0.9453125,
+          "margin": 0.4453125,
+          "reason": "Pixel motion features compared with observed user preferences",
+          "id": "bad-c32464bfaa7f5e02",
+          "source_id": "79c14c7a8b15",
+          "expected": "too_wobbly",
+          "training_source_ids": [
+            "0a554f79a55f",
+            "46eb8f203a58"
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "heldout_source_id": "0a554f79a55f",
+          "heldout_split_group": "0a554f79a55f",
+          "training_source_ids": [
+            "46eb8f203a58",
+            "79c14c7a8b15"
+          ],
+          "test_ids": [
+            "good-f8fa880be3c10074",
+            "good-fff0f7c9ad155567",
+            "bad-72205cf4cd822215",
+            "bad-83bb692a33012d50"
+          ]
+        },
+        {
+          "heldout_source_id": "46eb8f203a58",
+          "heldout_split_group": "46eb8f203a58",
+          "training_source_ids": [
+            "0a554f79a55f",
+            "79c14c7a8b15"
+          ],
+          "test_ids": [
+            "good-12263f406346e8c8",
+            "bad-f162e29eafac3821"
+          ]
+        },
+        {
+          "heldout_source_id": "79c14c7a8b15",
+          "heldout_split_group": "79c14c7a8b15",
+          "training_source_ids": [
+            "0a554f79a55f",
+            "46eb8f203a58"
+          ],
+          "test_ids": [
+            "good-82d913bff1741fdb",
+            "bad-37d50341c7110dac",
+            "bad-c32464bfaa7f5e02"
+          ]
+        }
+      ],
+      "method": "Leave one entire source recording out; fixed recipe; no threshold tuning on its labels"
+    },
+    "acceptance_gate": {
+      "all_known_examples_correct": true,
+      "all_heldout_examples_correct": false,
+      "all_heldout_pairs_correct": false,
+      "automatic_approval_permitted": false
+    }
+  }
+}
